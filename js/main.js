@@ -62,4 +62,38 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.partners').slick({
+		infinite: true,
+		slidesToShow: 3,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 560,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	function idInput(){
+		var i = 0;
+
+		$('.b-input').each(function(){
+			i++;
+			$(this).find('label').attr('for','inp-'+i);
+			if ( $(this).find('input').length ){
+				$(this).find('input').attr('id','inp-'+i);
+			} else {
+				$(this).find('textarea').attr('id','inp-'+i);
+			}
+		});
+	}
+	idInput();
+
 });
