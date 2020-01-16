@@ -96,4 +96,32 @@ $(document).ready(function(){
 	}
 	idInput();
 
+	function headerScroll(){
+		var st = $(window).scrollTop();
+		var gs = $('.header-main').outerHeight();
+		var nh = $('.header-bot').outerHeight();
+		
+		if ( $(window).width() > 768 ){
+			if (st > gs){
+				$('.header').addClass('scroll');
+				$('.header').css('padding-bottom',nh);
+			} else {
+				$('.header').removeClass('scroll');
+				$('.header').css('padding-bottom',0);
+			}
+		} else {
+			$('.header').removeClass('scroll');
+			$('.header').css('padding-bottom',0);
+		}
+	}
+	headerScroll();
+
+	$(window).on('scroll',function(){
+		headerScroll();
+	});
+
+	$(window).resize(function(){
+		headerScroll();
+	});
+
 });
