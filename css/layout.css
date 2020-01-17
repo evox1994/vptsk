@@ -184,14 +184,21 @@ input.error,textarea.error{
 input::-webkit-input-placeholder, input:-moz-placeholder {
 	color: #b0b8cd;
 }
+.mobile-btn-wrap {
+    display: none;
+    position: relative;
+    width: 80px;
+    height: 22px;
+}
 .mobile-btn {
 	display: none;
 	position: absolute;
-	left: 15px;
-	top: calc(50% - 11px);
+	left: 0;
+	top: 0;
 	width: 26px;
 	height: 22px;
 	z-index: 1;
+    cursor: pointer;
 }
 .mobile-btn .mobile-btn-el{
 	position: absolute;
@@ -200,7 +207,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	left: 0;
 	width: 100%;
 	height: 4px;
-	background-color: #000000;
+	background-color: #253c77;
 	opacity: 1;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -215,7 +222,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     top: 0;
     width: 100%;
     height: 4px;
-    background-color: #000000;
+    background-color: #253c77;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -233,7 +240,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background-color: #000000;
+    background-color: #253c77;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -263,7 +270,10 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	position: absolute;
 	width: 26px;
 	height: 22px;
-	z-index: 1;
+	z-index: 100;
+    cursor: pointer;
+    left: 30px;
+    top: 45px;
 }
 .close-btn::after {
 	content: '';
@@ -273,7 +283,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background-color: #000000;
+    background-color: #253c77;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -291,7 +301,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     top: 0;
     width: 100%;
     height: 4px;
-    background-color: #000000;
+    background-color: #253c77;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -310,7 +320,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	box-sizing: border-box;
 	width: 100%;
 	height: 100vh;
-	padding: 30px 10px;
+	padding: 15px 30px 70px;
 	background-color: #ffffff;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -319,6 +329,92 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .mobile-menu.active {
 	top: 0;
+}
+.mobile-menu .nav {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+.mobile-menu .nav li {
+    border-bottom: 1px solid #253c77;
+    font-weight: 500;
+    font-size: 14px;
+}
+.mobile-menu .nav li:last-child {
+    border: 0;
+}
+.mobile-menu .nav li a, .mobile-menu .nav li span {
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    color: #253c77;
+}
+.mobile-menu .nav > li.nav-drop:hover {
+    cursor: pointer;
+}
+.mobile-menu .nav > li.nav-drop > span {
+    padding-right: 24px;
+}
+.mobile-menu .nav > li.nav-drop > span:before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 7px);
+    background-image: url('../i/nav-arr.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mobile-menu .nav > li.nav-drop > .nav-drop-wrap {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    padding: 90px 30px 70px;
+    background-color: #ffffff;
+    position: fixed;
+    left: -200%;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu .nav > li.nav-drop.active > .nav-drop-wrap {
+    left: 0;
+}
+.mobile-menu .nav-drop-wrap .nav {
+    margin-top: 0;
+}
+.mobile-menu .nav-back {
+    display: block;
+    padding-left: 14px;
+    font-size: 12px;
+    color: #253c77;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 48px;
+}
+.mobile-menu .nav-back:before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 6px);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../i/nav-arr.svg');
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .policy-text {
@@ -425,6 +521,24 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     width: 40%;
     flex-wrap: wrap;
 }
+.header-contacts .icons {
+    display: none;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-contacts .icons a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.header-contacts .icons a img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
 .header-phone {
     font-size: 32px;
     font-weight: 700;
@@ -470,14 +584,17 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .header-nav > ul > li:last-child {
     padding-right: 0;
 }
-.header-nav > ul > li a, .header-nav > ul > li span {
+.header-nav > ul > li > a, .header-nav > ul > li > span {
     position: relative;
     color: #ffffff;
     font-weight: 500;
     font-size: 18px;
 }
-.header-nav > ul > li a:hover {
+.header-nav > ul > li > a:hover {
     opacity: 0.5;
+}
+.header-nav > ul > li.li-drop:hover {
+    cursor: default;
 }
 .header-nav > ul > li.li-drop:after {
     content: '';
@@ -489,10 +606,10 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     left: 0;
     bottom: 0;
 }
-.header-nav > ul > li.li-drop span {
+.header-nav > ul > li.li-drop > span {
     padding-right: 20px;
 }
-.header-nav > ul > li.li-drop span:after {
+.header-nav > ul > li.li-drop > span:after {
     content: '';
     display: block;
     width: 0;
@@ -503,6 +620,114 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     position: absolute;
     right: 0;
     top: calc(50% - 2.5px);
+}
+.header .header-nav .drop {
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 163px;
+    width: 100%;
+    height: calc(100vh - 163px);
+    background-color: #eef3f6;
+}
+.header.scroll .header-nav .drop {
+    top: 50px !important;
+    height: calc(100vh - 50px) !important;
+}
+.header .header-nav > ul > li.li-drop:hover .drop {
+    display: block;
+}
+.header .header-nav .drop .drop-wrap {
+    position: relative;
+    max-width: 1170px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+.header .header-nav .drop .drop-wrap .drop-list {
+    width: 310px;
+    padding: 45px 0;
+    text-align: left;
+}
+.header .header-nav .drop .drop-wrap .drop-list > li {
+    border-radius: 5px 0 0 5px;
+    padding: 10px 13px;
+    cursor: pointer;
+    color: #253c77;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header .header-nav .drop .drop-wrap .drop-list > li > a,
+.header .header-nav .drop .drop-wrap .drop-list > li > span {
+    color: #253c77;
+}
+.header .header-nav .drop .drop-wrap .drop-list > li:hover {
+    background-color: hsla(0,0%,100%,0.4);
+}
+.header .header-nav .drop .drop-wrap .drop-list > li.active {
+    background-color: #ffffff;
+}
+.header .header-nav .drop .drop-wrap .subdrop {
+    display: none;
+    width: calc(100% - 310px);
+    min-height: 100%;
+    padding: 45px 0 45px 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header .header-nav .drop .drop-wrap .subdrop:after {
+    content: '';
+    display: block;
+    width: 10000px;
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #ffffff;
+}
+.header .header-nav .drop .drop-wrap .drop-list > li.active .subdrop {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.header .header-nav .drop .drop-wrap .subdrop ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: calc(100% - 300px);
+}
+.header .header-nav .drop .drop-wrap .subdrop ul li {
+    width: calc(50% - 15px);
+    padding: 10px 0;
+    font-size: 14px;
+    color: #253c77;
+    font-weight: 500;
+    cursor: default;
+}
+.header .header-nav .drop .drop-wrap .subdrop ul li a {
+    color: #253c77;
+}
+.header .header-nav .drop .drop-wrap .subdrop ul li a:hover {
+    color: #8cca11;
+}
+.header .header-nav .drop .drop-wrap .subdrop .subdrop-banner {
+    width: 250px;
+}
+.header .header-nav .drop .drop-wrap .subdrop .subdrop-banner img {
+    display: block;
+    max-width: 100%;
 }
 
 .title {
@@ -1061,9 +1286,64 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 }	
 @media screen and (max-width: 1280px){
-	
+	.header-addres {
+        width: auto;
+    }
+    .header-contacts {
+        display: block;
+        width: auto;
+        text-align: right;
+    }
 }
 @media screen and (max-width: 1024px){
+    .body-wrap {
+        padding-top: 112px;
+    }
+    .mobile-btn-wrap, .mobile-btn, .close-btn, .mobile-menu {
+        display: block;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+    }
+    .header-bot, .header-addres, .header-phone, .header-callback {
+        display: none;
+    }
+    .header-contacts .icons {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .mobile-menu .header-logo {
+        margin: 0 auto;
+    }
+    .mobile-menu .header-addres {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0;
+        font-size: 12px;
+    }
+    .mobile-menu .header-addres span {
+        font-size: 16px;
+    }
+    .mobile-menu .header-phone {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .mobile-menu .header-callback {
+        display: block;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
     .title {
         font-size: 25px;
     }
@@ -1132,6 +1412,36 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 @media screen and (max-width: 768px){
     .container {
         padding: 0 10px;
+    }
+    .body-wrap {
+        padding-top: 81px;
+    }
+    .header-main {
+        padding: 10px 0;
+    }
+    .header-logo {
+        width: 200px;
+    }
+    .header-contacts .icons, .mobile-btn-wrap {
+        width: 50px;
+    }
+    .header-contacts .icons a {
+        width: 20px;
+        height: 20px;
+    }
+    .close-btn {
+        top: 30px;
+        left: 10px;
+    }
+    .mobile-menu {
+        padding: 10px 10px 70px;
+    }
+    .mobile-menu .nav > li.nav-drop > .nav-drop-wrap {
+        padding: 70px 10px;
+    }
+    .mobile-menu .nav-back {
+        right: 10px;
+        top: 33px;
     }
 
     .title {
@@ -1299,5 +1609,22 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .service:last-child {
         margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 360px){
+    .body-wrap {
+        padding-top: 62px;
+    }
+    .header-logo {
+        width: 140px;
+    }
+    .close-btn {
+        top: 20px;
+    }
+    .mobile-menu .nav > li.nav-drop > .nav-drop-wrap {
+        padding: 60px 10px 70px;
+    }
+    .mobile-menu .nav-back {
+        top: 23px;
     }
 }
