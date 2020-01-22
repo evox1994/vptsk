@@ -138,6 +138,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$(document).on('click','.drop-close',function(){
+		$('.li-drop').addClass('no-hover');
+		setTimeout(function(){
+			$('.li-drop').removeClass('no-hover');
+		},200);
+	});
+
 	function headerScroll(){
 		var st = $(window).scrollTop();
 		var gs = $('.header-main').outerHeight();
