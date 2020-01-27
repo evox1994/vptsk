@@ -145,6 +145,10 @@ $(document).ready(function(){
 		},200);
 	});
 
+	$(document).on('click','.faq .qwestion',function(){
+		$(this).parents('li').toggleClass('active');
+	});
+
 	function headerScroll(){
 		var st = $(window).scrollTop();
 		var gs = $('.header-main').outerHeight();
