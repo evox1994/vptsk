@@ -510,7 +510,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     text-align: left;
     font-size: 14px;
     line-height: 1.2;
-    color: #253c77;
+    /*color: #253c77;*/
+    color: #02505d;
     font-weight: 500;
     padding: 0 10px;
 }
@@ -544,7 +545,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-weight: 700;
 }
 .header-phone a {
-    color: #253c77;
+    /*color: #253c77;*/
+    color: #02505d;
 }
 .header-callback {
     font-size: 18px;
@@ -558,7 +560,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     color: #fe7a3c;
 }
 .header-bot {
-    background-color: #253c77;
+    /*background-color: #253c77;*/
+    background-color: #02505d;
     width: 100%;
 }
 .header.scroll .header-bot {
@@ -977,12 +980,17 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.stock-date {
+    color: inherit !important;
+}
+
 .title {
     display: block;
     font-size: 30px;
     font-weight: 800;
     line-height: 1.2;
-    color: #253c77;
+    /*color: #253c77;*/
+    color: #02505d;
 }
 .ekr-blue .title {
     color: #ffffff;
@@ -1025,7 +1033,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 18px;
     margin-top: 20px;
     line-height: 1.2;
-    color: #253c77;
+    /*color: #253c77;*/
 }
 .ekr-blue .subtitle {
     color: #ffffff;
@@ -1165,7 +1173,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     width: 55px;
     height: 3px;
     margin-bottom: 50px;
-    background-image: linear-gradient(174.5deg,#a4d73e 13.39%,#88bd1f 86.61%);
+    /*background-image: linear-gradient(174.5deg,#a4d73e 13.39%,#88bd1f 86.61%);*/
+    background-color: #cbbba0;
 }
 .face .title {
     font-size: 34px;
@@ -1174,7 +1183,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     margin: 30px 0 75px;
     line-height: 1.2;
-    color: #253c77;
+    /*color: #253c77;*/
+    color: #02505d;
     font-size: 18px;
 }
 
@@ -1607,6 +1617,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     max-width: 900px;
     margin: 40px auto 0;
     background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(25,48,144,0.1);
 }
 .b-form {
     max-width: 360px;
@@ -1792,6 +1803,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     background-color: #ffffff;
     margin-top: 20px;
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 .faq-list {
     margin: 0 auto;
