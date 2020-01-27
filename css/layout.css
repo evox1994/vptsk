@@ -1943,6 +1943,10 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
         width: 100%;
     }
 
+    .ekr.first-ekr {
+        padding-bottom: 30px;
+    }
+
     .title {
         font-size: 25px;
     }
@@ -2086,6 +2090,9 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .body-wrap {
         padding-top: 81px;
+    }
+    .ekr.first-ekr {
+        padding-bottom: 0;
     }
     .header-main {
         padding: 10px 0;
