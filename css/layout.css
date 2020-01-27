@@ -207,7 +207,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 	left: 0;
 	width: 100%;
 	height: 4px;
-	background-color: #253c77;
+	background-color: #02505d;
 	opacity: 1;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -222,7 +222,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     top: 0;
     width: 100%;
     height: 4px;
-    background-color: #253c77;
+    background-color: #02505d;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -240,7 +240,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background-color: #253c77;
+    background-color: #02505d;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -283,7 +283,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     bottom: 0;
     width: 100%;
     height: 4px;
-    background-color: #253c77;
+    background-color: #02505d;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -301,7 +301,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     top: 0;
     width: 100%;
     height: 4px;
-    background-color: #253c77;
+    background-color: #02505d;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
     -ms-transform-origin: left;
@@ -336,7 +336,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     text-align: left;
 }
 .mobile-menu .nav li {
-    border-bottom: 1px solid #253c77;
+    border-bottom: 1px solid #02505d;
     font-weight: 500;
     font-size: 14px;
 }
@@ -347,7 +347,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     padding: 10px 0;
     position: relative;
-    color: #253c77;
+    color: #02505d;
 }
 .mobile-menu .nav > li.nav-drop:hover {
     cursor: pointer;
@@ -393,7 +393,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     padding-left: 14px;
     font-size: 12px;
-    color: #253c77;
+    color: #02505d;
     cursor: pointer;
     position: absolute;
     right: 30px;
@@ -510,7 +510,6 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     text-align: left;
     font-size: 14px;
     line-height: 1.2;
-    /*color: #253c77;*/
     color: #02505d;
     font-weight: 500;
     padding: 0 10px;
@@ -545,7 +544,6 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-weight: 700;
 }
 .header-phone a {
-    /*color: #253c77;*/
     color: #02505d;
 }
 .header-callback {
@@ -560,7 +558,6 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     color: #fe7a3c;
 }
 .header-bot {
-    /*background-color: #253c77;*/
     background-color: #02505d;
     width: 100%;
 }
@@ -667,7 +664,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #253c77;
+  background-color: #02505d;
   border-radius: 100px;
   position: absolute;
   left: 0;
@@ -694,7 +691,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     border-radius: 5px 0 0 5px;
     padding: 10px 13px;
     cursor: pointer;
-    color: #253c77;
+    color: #02505d;
     font-size: 16px;
     font-weight: 500;
     -webkit-transition: all 0.3s;
@@ -704,7 +701,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .header .header-nav .drop .drop-wrap .drop-list > li > a,
 .header .header-nav .drop .drop-wrap .drop-list > li > span {
-    color: #253c77;
+    color: #02505d;
 }
 .header .header-nav .drop .drop-wrap .drop-list > li:hover {
     background-color: hsla(0,0%,100%,0.4);
@@ -753,12 +750,12 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     width: calc(50% - 15px);
     padding: 10px 0;
     font-size: 14px;
-    color: #253c77;
+    color: #02505d;
     font-weight: 500;
     cursor: default;
 }
 .header .header-nav .drop .drop-wrap .subdrop ul li a {
-    color: #253c77;
+    color: #02505d;
 }
 .header .header-nav .drop .drop-wrap .subdrop ul li a:hover {
     color: #8cca11;
@@ -772,8 +769,8 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 
 .footer {
-    background-image: linear-gradient(154.98deg,#253c77 12.5%,#4971d0 95.58%);
-    background-color: #253c77;
+    background-image: linear-gradient(154.98deg,#02505d 12.5%,#5a9ea9 95.58%);
+    background-color: #02505d;
     padding: 50px 0;
     text-align: left;
 }
@@ -989,10 +986,9 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.2;
-    /*color: #253c77;*/
     color: #02505d;
 }
-.ekr-blue .title {
+.ekr-green .title {
     color: #ffffff;
 }
 .title span {
@@ -1012,14 +1008,14 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .title-wrap .uniq {
     width: 20%;
     font-size: 10px;
-    color: #253c77;
+    color: #02505d;
     opacity: 0.35;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
     text-align: left;
 }
-.ekr-blue .title-wrap .uniq {
+.ekr-green .title-wrap .uniq {
     color: #ffffff;
 }
 .title-wrap .uniq.big {
@@ -1033,9 +1029,9 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 18px;
     margin-top: 20px;
     line-height: 1.2;
-    /*color: #253c77;*/
+    color: #02505d;
 }
-.ekr-blue .subtitle {
+.ekr-green .subtitle {
     color: #ffffff;
 }
 .uniq-solo {
@@ -1056,13 +1052,13 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 10px;
     line-height: 1.2;
     font-weight: 600;
-    color: #253c77;
+    color: #02505d;
     opacity: 0.35;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: left;
 }
-.ekr-blue .uniq-solo-2 {
+.ekr-green .uniq-solo-2 {
     color: #ffffff;
 }
 
@@ -1106,18 +1102,18 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .ekr.no-pad-bot {
     padding-bottom: 0 !important;
 }
-.ekr.ekr-blue {
-    background-image: linear-gradient(154.98deg,#253c77 12.5%,#4971d0 95.58%);
-    background-color: #253c77;
+.ekr.ekr-green {
+    background-image: linear-gradient(154.98deg,#02505d 12.5%,#5a9ea9 95.58%);
+    background-color: #02505d;
 }
 
 .b-text {
     margin-top: 30px;
     font-size: 16px;
     line-height: 1.5;
-    color: #253c77;
+    color: #02505d;
 }
-.ekr-blue .b-text {
+.ekr-green .b-text {
     color: #ffffff;
 }
 .b-text p {
@@ -1129,7 +1125,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .b-text a {
     color: #8cca11;
-    border-bottom: 1px dotted #253c77;
+    border-bottom: 1px dotted #02505d;
 }
 .b-text a:hover {
     color: #fe7a3c;
@@ -1173,8 +1169,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     width: 55px;
     height: 3px;
     margin-bottom: 50px;
-    /*background-image: linear-gradient(174.5deg,#a4d73e 13.39%,#88bd1f 86.61%);*/
-    background-color: #cbbba0;
+    background-image: linear-gradient(174.5deg,#a4d73e 13.39%,#88bd1f 86.61%);
 }
 .face .title {
     font-size: 34px;
@@ -1183,7 +1178,6 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     margin: 30px 0 75px;
     line-height: 1.2;
-    /*color: #253c77;*/
     color: #02505d;
     font-size: 18px;
 }
@@ -1199,13 +1193,13 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     line-height: 1.2;
     letter-spacing: 1.4px;
     font-weight: 700;
-    color: rgba(37, 60, 119, 0.5);
+    color: rgba(2, 80, 93, 0.5);
 }
 .breadcrumbs li a {
-    color: rgba(37, 60, 119, 0.8);
+    color: rgba(2, 80, 93, 0.8);
 }
 .breadcrumbs li a:hover {
-    color: rgba(37, 60, 119, 0.5);
+    color: rgba(2, 80, 93, 0.5);
 }
 
 .preim {
@@ -1251,7 +1245,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .preim li .name {
     display: block;
     line-height: 1.2;
-    color: #253c77;
+    color: #02505d;
     font-size: 16px;
     font-weight: 800;
 }
@@ -1260,7 +1254,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 14px;
     line-height: 1.5;
     margin-top: 16px;
-    color: #253c77;
+    color: #02505d;
 }
 
 .img-and-text {
@@ -1288,7 +1282,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     margin-bottom: 30px;
     padding-left: 26px;
     font-size: 16px;
-    color: #253c77;
+    color: #02505d;
 }
 .img-and-text .text ul li:last-child {
     margin-bottom: 0;
@@ -1384,7 +1378,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     border: 1px solid #ebebeb;
     border-radius: 5px;
     font-size: 14px;
-    color: #253c77;
+    color: #02505d;
     text-align: left;
     cursor: pointer;
     font-weight: 500;
@@ -1438,7 +1432,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(25,48,144,0.1);
     text-transform: uppercase;
-    color: #253c77;
+    color: #02505d;
     font-size: 10px;
     cursor: pointer;
     font-weight: 700;
@@ -1460,11 +1454,11 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 25px;
     font-weight: 700;
     line-height: 1.2;
-    color: #253c77;
+    color: #02505d;
     margin-bottom: 15px;
 }
 .service-cat a {
-    color: #253c77;
+    color: #02505d;
     border-bottom: 2px solid transparent;
 }
 .service-cat a:hover {
@@ -1472,7 +1466,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .service ul li {
     font-size: 16px;
-    color: #253c77;
+    color: #02505d;
     line-height: 1.2;
     font-weight: 700;
     border-bottom: 1px solid #ebebeb;
@@ -1482,7 +1476,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 }
 .service ul li a {
     display: block;
-    color: #253c77;
+    color: #02505d;
     padding: 20px 120px 20px 70px;
     position: relative;
 }
@@ -1522,13 +1516,13 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     max-width: 100%;
     border-radius: 50%;
-    border: 2px solid #253c77;
+    border: 2px solid #02505d;
     margin: 0 auto 20px;
 }
 .person .image .name {
     font-size: 20px;
     line-height: 1.2;
-    color: #253c77;
+    color: #02505d;
     margin-bottom: 10px;
 }
 .person .image .position {
@@ -1634,7 +1628,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 18px;
     padding: 19px 15px;
     font-weight: 600;
-    color: #253c77;
+    color: #02505d;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: #eff4ff;
@@ -1647,7 +1641,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     font-size: 16px;
     margin-bottom: 15px;
-    color: #253c77;
+    color: #02505d;
 }
 
 .seo-wrap {
@@ -1695,7 +1689,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     font-size: 16px;
     font-weight: 700;
-    color: #253c77;
+    color: #02505d;
     line-height: 1.2;
     margin-bottom: 16px;
 }
@@ -1703,7 +1697,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     color: #8cca11;
 }
 .b-info-item .item-text {
-    color: #253c77;
+    color: #02505d;
     line-height: 1.5;
     font-size: 14px;
 }
@@ -1767,7 +1761,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .b-cards li .item-title {
     display: block;
     font-size: 20px;
-    color: #253c77;
+    color: #02505d;
     margin-top: 12px;
     font-weight: 700;
 }
@@ -1820,7 +1814,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .faq-list li .qwestion {
     display: block;
     padding: 20px 120px 20px 70px;
-    color: #253c77;
+    color: #02505d;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
@@ -1858,7 +1852,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     display: block;
     overflow: hidden;
     max-height: 0;
-    color: #253c77;
+    color: #02505d;
     font-size: 16px;
     line-height: 1.4;
     padding: 0 70px;
