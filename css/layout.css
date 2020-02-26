@@ -1185,6 +1185,9 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
 .breadcrumbs {
     margin: 0 auto 5px;
 }
+.ekr-bread .breadcrumbs {
+    margin-bottom: 40px;
+}
 .breadcrumbs li {
     display: inline-block;
     vertical-align: top;
@@ -1195,11 +1198,20 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-weight: 700;
     color: rgba(2, 80, 93, 0.5);
 }
+.ekr-green .breadcrumbs li {
+    color: rgba(255, 255, 255, 0.7);
+}
 .breadcrumbs li a {
     color: rgba(2, 80, 93, 0.8);
 }
+.ekr-green .breadcrumbs li a {
+    color: #ffffff;
+}
 .breadcrumbs li a:hover {
     color: rgba(2, 80, 93, 0.5);
+}
+.ekr-green .breadcrumbs li a:hover {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .preim {
