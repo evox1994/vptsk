@@ -1935,6 +1935,56 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     width: 100%;
 }
 
+.b-docs {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.b-docs li {
+    width: calc(25% - 22.5px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.b-docs li:nth-child(4n) {
+    margin-right: 0;
+}
+.b-docs li .image {
+    position: relative;
+}
+.b-docs li .image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.b-docs li a:hover .image img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.b-docs li .name {
+    font-size: 16px;
+    color: #02505d;
+    line-height: 1.2;
+    margin-top: 20px;
+    font-weight: 700;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.b-docs li a:hover .name {
+    color: #8cca11;
+}
+
 
 
 
@@ -2149,6 +2199,16 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
         margin-top: 20px;
         left: 0;
         top: 0;
+    }
+
+    .b-docs li {
+        width: calc(100%/3 - 20px);
+    }
+    .b-docs li:nth-child(4n) {
+        margin-right: 30px;
+    }
+    .b-docs li:nth-child(3n) {
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 768px){
@@ -2411,6 +2471,25 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     .map iframe {
         height: 400px !important;
     }
+
+    .b-docs {
+        justify-content: space-between;
+    }
+    .b-docs li {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .b-docs li:nth-child(4n) {
+        margin-right: 0;
+    }
+    .b-docs li .image img {
+        max-height: 70px;
+    }
+    .b-docs li .name {
+        font-size: 14px;
+        margin-top: 15px;
+    }
 }
 @media screen and (max-width: 600px){
     .face-image {
@@ -2444,6 +2523,22 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .contacts-item.small {
         width: 100%;
+    }
+
+    .b-docs {
+        display: block;
+        text-align: center;
+    }
+    .b-docs li {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 20px !important;
+    }
+    .b-docs li:last-child {
+        margin-bottom: 0 !important;
+    }
+    .b-docs li .image img {
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 360px){
