@@ -2118,6 +2118,33 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     margin-bottom: 0;
 }
 
+.b-policy {
+    padding: 30px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(25,48,144,.1);
+    text-align: left;
+}
+.b-policy h3 {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color: #02505d;
+    margin-top: 40px;
+}
+.b-policy p {
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #02505d;
+    margin-top: 20px;
+}
+.b-policy a {
+    color: #02505d;
+}
+.b-policy h3:first-child, .b-policy p:first-child {
+    margin-top: 0;
+}
+
 
 
 
@@ -2670,6 +2697,18 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .b-stocks li .descr p {
         margin-bottom: 12px;
+    }
+
+    .b-policy {
+        padding: 20px;
+    }
+    .b-policy h3 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .b-policy p {
+        font-size: 12px;
+        margin-top: 15px;
     }
 }
 @media screen and (max-width: 600px){
