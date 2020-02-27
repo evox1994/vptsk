@@ -2079,6 +2079,45 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     font-size: 16px;
 }
 
+.b-stocks li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 38px rgba(73,113,208,0.2);
+    padding: 50px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.b-stocks li:last-child {
+    margin-bottom: 0;
+}
+.b-stocks li .name {
+    width: calc(45% - 15px);
+    font-weight: 700;
+    font-size: 20px;
+    color: #02505d;
+    line-height: 1.2;
+    max-width: 360px;
+}
+.b-stocks li .descr {
+    width: calc(55% - 15px);
+    line-height: 1.2;
+    font-size: 14px;
+    color: #02505d;
+    font-weight: 500;
+}
+.b-stocks li .descr p {
+    display: block;
+    margin-bottom: 14px;
+}
+.b-stocks li .descr p:last-child {
+    margin-bottom: 0;
+}
+
 
 
 
@@ -2619,6 +2658,19 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     .b-reiting li > a .reiting span {
         font-size: 12px;
     }
+
+    .b-stocks li {
+        padding: 20px;
+    }
+    .b-stocks li .name {
+        font-size: 16px;
+    }
+    .b-stocks li .descr {
+        font-size: 12px;
+    }
+    .b-stocks li .descr p {
+        margin-bottom: 12px;
+    }
 }
 @media screen and (max-width: 600px){
     .face-image {
@@ -2688,6 +2740,18 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .b-reiting li:last-child {
         margin-bottom: 0;
+    }
+
+    .b-stocks li {
+        display: block;
+    }
+    .b-stocks li .name {
+        max-width: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .b-stocks li .descr {
+        width: 100%;
     }
 }
 @media screen and (max-width: 360px){
