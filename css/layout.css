@@ -2145,6 +2145,48 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     margin-top: 0;
 }
 
+.b-thank {
+    text-align: left;
+    min-height: calc(100vh - 263px);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.b-thank .title, .b-thank .subtitle {
+    width: 100%;
+}
+.b-thank .btn {
+    max-width: 300px;
+    margin-top: 30px;
+}
+
+.popup {
+    padding: 50px;
+    width: 95%;
+    max-width: 620px;
+    text-align: center;
+}
+.popup-title {
+    display: block;
+    font-size: 24px;
+    color: #02505d;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.popup-subtitle {
+    display: block;
+    font-size: 18px;
+    color: #02505d;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
 
 
 
@@ -2369,6 +2411,10 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .b-docs li:nth-child(3n) {
         margin-right: 0;
+    }
+
+    .b-thank {
+        min-height: calc(100vh - 213px);
     }
 }
 @media screen and (max-width: 768px){
@@ -2710,6 +2756,24 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
         font-size: 12px;
         margin-top: 15px;
     }
+
+    .b-thank {
+        min-height: calc(100vh - 181px);
+    }
+    .b-thank .btn {
+        margin-top: 20px;
+        max-width: 260px;
+    }
+
+    .popup {
+        padding: 50px 20px;
+    }
+    .popup-title {
+        font-size: 20px;
+    }
+    .popup-subtitle {
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 600px){
     .face-image {
@@ -2808,5 +2872,9 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     }
     .mobile-menu .nav-back {
         top: 23px;
+    }
+
+    .b-thank {
+        min-height: calc(100vh - 163px);
     }
 }
