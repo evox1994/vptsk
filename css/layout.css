@@ -1172,7 +1172,7 @@ input::-webkit-input-placeholder, input:-moz-placeholder {
     background-image: linear-gradient(174.5deg,#a4d73e 13.39%,#88bd1f 86.61%);
 }
 .face .title {
-    font-size: 34px;
+    font-size: 33px;
 }
 .face .descr {
     display: block;
